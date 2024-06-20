@@ -266,8 +266,10 @@
 }
 
 .meal-tags {
-  margin-bottom: 1.2rem;
+  margin-bottom: 12px;
   display: flex;
+  width: 240px;
+  height: 20px;
   gap: 0.4rem;
 }
 .meal {
@@ -275,25 +277,27 @@
   border-radius: 12px;
   overflow: hidden;
   width: 336px;
-  height: 500.16px;
+  height: 535px;
   padding: 0;
 }
 
 .meal-content {
-  padding: 32px 48px 48px;
+  padding: 32px 50px 50px 48px;
+  max-height: 280px;
 }
 
 .tag {
   display: inline-block;
-  padding: 0.4rem 0.8rem;
-  font-size: 1.4rem;
+  padding: 4px 8px;
+   font-size: 13.5px; 
   text-transform: uppercase;
   color: #333;
   border-radius: 100px;
-  font-weight: 600;
+  font-weight: 800;
 }
 .tag--vegetarian {
   background-color: #51cf66;
+  width: 92px;
 }
 .tag--vegan {
   background-color: #94d82b;
@@ -311,7 +315,6 @@
 /* Image styling */
 .meal-img {
   width: 336px;
-
   height: 224.16px;
 }
 
@@ -320,20 +323,18 @@
   font-size: 24px;
   color: #333;
   font-weight: 600;
-  margin-bottom: 1.6rem; /* Adjust margin bottom as needed */
+  margin-top: 0;
+  margin-bottom: 32px; /* Adjust margin bottom as needed */
 }
 
 /* Meal attributes list */
-/* .meal-attributes {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-} */
 .meal-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 /* Individual meal attribute item */
@@ -342,13 +343,15 @@
   display: flex;
   align-items: center;
   gap: 1.6rem; /* Adjust gap between icon and text */
-  margin-bottom: 1rem; /* Adjust margin bottom for spacing */
+  /* margin-bottom: 1rem; Adjust margin bottom for spacing */
 }
-
+li.meal-attribute {
+  height: 24px;
+}
 /* Icon styling */
 .meal-icon {
-  height: 2.4rem;
-  width: 2.4rem;
+  height: 24px;
+  width: 24px;
   color: #e67e22; /* Adjust icon color as needed */
 }
 /* Flexbox row for meals and diets */
@@ -363,5 +366,5 @@
 }
 
 strong {
-  font-weight: 500;
+  font-weight: 600;
 }
